@@ -16,18 +16,17 @@ public class Ejemplo_Switch {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        
+
         Scanner leer = new Scanner(System.in);
-        
+
         // Vamos a declarar las variables
-        
         int opcion;
-        
+
         System.out.println("Ingrese una opcion");
-        
+
         opcion = leer.nextInt();
-        
-        switch (opcion){
+
+        switch (opcion) {
             case 1:
                 System.out.println("Esta linea de codigo se ejecuta si opcion = 1");
                 break;
@@ -36,12 +35,9 @@ public class Ejemplo_Switch {
                 break;
             default:
                 System.out.println("El valor ingresado en la variable opcion es diferente" + "a todos los casos analizados por el switch");
-                
-               
-        
+
         }
-        
-        
+
     }
-    
+
 }

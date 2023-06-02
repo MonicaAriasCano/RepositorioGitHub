@@ -34,6 +34,24 @@ public class SumatoriaConSalto {
             }
         } while (num <= 0 || num > 1000);
 
+        int j, suma;
+        for (int i = 1; i <= num; i++) {
+
+            if (i % 2 != 0) {
+                continue; //Detiene la iteración actual y continua con la siguiente
+            }
+            suma = 0;
+            j = 1;
+
+            while (j <= i) {
+                suma += j;
+                j++;
+
+            }
+            System.out.println("La suma de los " + i + "números n<turales es: " + suma);
+
+        }
+
     }
 
 }
